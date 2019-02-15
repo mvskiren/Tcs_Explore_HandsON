@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="utf-8">
+<title> hello</title>
+
+<script>
+
+ function colorch()
+ {
+ alert(document.getElementById('colorone').value);
+ }
+
+
+ function popup()
+ {
+ alert(document.getElementById('ageone').value);
+ }
+ window.onload=function{
+ document.getElementById('color').addEventListener('change', displayColor, false);
+
+ }
+ function displayColor()
+ {
+   document.getElementById('colorout').innerHTML=document.getElementById('color').value;
+ }
+
+
+ </script>
+</head>
+<h2>Hello Kiran</h2><br>
+<h3>Hello Kiran2</h3><br>
+<form>
+<table width="410" height="94" border="0">
+<tr>
+ <td width="108">Name:</td>
+ <td width="92"> <input type="text" value="Enter your name"> </td>
+</tr>
+<tr>
+ <td width="108">Email address :</td>
+ <td width="92"> <input type="text" value="Enter your name"> </td>
+</tr>
+<tr>
+ <td width="108">PASSWORD:</td>
+ <td width="92"> <input type="password"> </td>
+</tr>
+
+<tr>
+ <td width="108">color:</td>
+ <td> <input name="color" type="color"> </td>
+</tr>
+
+<tr>
+ <td width="108">COMMENTS:</td>
+ <td width="92"> <textarea type="text" width:"200" height:"45"></textarea> </td>
+</tr>
+<tr>
+<td> <input type="submit"> </td></td>
+</tr>
+</form>
+
+Age: <input type="number" id="ageone" max="25" min="0">
+<button id="age" onclick="popup()">Get age</button>
+color: <input type="color" id="colorone" max="25" min="0" onchange="colorch()">
+
+<form action="#" method="post">
+<input type="color" id="color">
+<output id="colorout" ></output>
+
+<!--The <output> tag represents the result of a calculation (like one performed by a script).-->
+</form>
+
+
+</html>

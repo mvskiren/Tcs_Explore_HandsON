@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="utf-8">
+<title> hello</title>
+
+<script>
+
+ window.onload=function()
+ {
+ document.getElementById('color').addEventListener('change', displayColor, false);
+
+ }
+ function displayColor()
+ {
+   document.getElementById('colorout').innerHTML=document.getElementById('color').value;
+ }
+
+
+ </script>
+</head>
+
+
+<form action="#" method="post">
+  <label for="color">Color</label>
+<input type="color" id="color">
+<output id="colorout" ></output>
+
+<!--The <output> tag represents the result of a calculation (like one performed by a script).-->
+</form>
+
+
+</html>
